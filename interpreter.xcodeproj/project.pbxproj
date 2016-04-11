@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		45802B081CB90BEF00290B38 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45802B071CB90BEF00290B38 /* main.cpp */; };
+		45802B111CB9179C00290B38 /* lisp_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45802B101CB9179C00290B38 /* lisp_utils.cpp */; };
+		458745C81CB99DF200994189 /* lisp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458745C61CB99DF200994189 /* lisp.cpp */; };
+		458745CC1CB9D9A600994189 /* lisp_aritmetic_operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458745CA1CB9D9A600994189 /* lisp_aritmetic_operators.cpp */; };
+		458745CF1CB9DE8F00994189 /* lisp_comparison_operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458745CD1CB9DE8F00994189 /* lisp_comparison_operators.cpp */; };
+		458745D21CB9DFE900994189 /* lisp_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458745D01CB9DFE900994189 /* lisp_functions.cpp */; };
+		458745D51CBA6E6A00994189 /* lisp_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458745D31CBA6E6A00994189 /* lisp_object.cpp */; };
+		458745D81CBA749400994189 /* lisp_interpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458745D61CBA749400994189 /* lisp_interpreter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,23 @@
 /* Begin PBXFileReference section */
 		45802B041CB90BEF00290B38 /* interpreter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = interpreter; sourceTree = BUILT_PRODUCTS_DIR; };
 		45802B071CB90BEF00290B38 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		45802B0E1CB9157500290B38 /* lisp_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lisp_utils.h; path = interpreter/lisp_utils.h; sourceTree = "<group>"; };
+		45802B0F1CB9163A00290B38 /* tokens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tokens.h; sourceTree = "<group>"; };
+		45802B101CB9179C00290B38 /* lisp_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lisp_utils.cpp; path = interpreter/lisp_utils.cpp; sourceTree = "<group>"; };
+		458745C21CB94C7B00994189 /* string_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = string_utils.h; sourceTree = "<group>"; };
+		458745C61CB99DF200994189 /* lisp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lisp.cpp; sourceTree = "<group>"; };
+		458745C71CB99DF200994189 /* lisp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp.h; sourceTree = "<group>"; };
+		458745C91CB9D44000994189 /* lisp_errors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lisp_errors.h; sourceTree = "<group>"; };
+		458745CA1CB9D9A600994189 /* lisp_aritmetic_operators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lisp_aritmetic_operators.cpp; sourceTree = "<group>"; };
+		458745CB1CB9D9A600994189 /* lisp_aritmetic_operators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp_aritmetic_operators.h; sourceTree = "<group>"; };
+		458745CD1CB9DE8F00994189 /* lisp_comparison_operators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lisp_comparison_operators.cpp; sourceTree = "<group>"; };
+		458745CE1CB9DE8F00994189 /* lisp_comparison_operators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp_comparison_operators.h; sourceTree = "<group>"; };
+		458745D01CB9DFE900994189 /* lisp_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lisp_functions.cpp; sourceTree = "<group>"; };
+		458745D11CB9DFE900994189 /* lisp_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp_functions.h; sourceTree = "<group>"; };
+		458745D31CBA6E6A00994189 /* lisp_object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lisp_object.cpp; sourceTree = "<group>"; };
+		458745D41CBA6E6A00994189 /* lisp_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp_object.h; sourceTree = "<group>"; };
+		458745D61CBA749400994189 /* lisp_interpreter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lisp_interpreter.cpp; sourceTree = "<group>"; };
+		458745D71CBA749400994189 /* lisp_interpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lisp_interpreter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +65,23 @@
 		45802AFB1CB90BEF00290B38 = {
 			isa = PBXGroup;
 			children = (
+				458745D61CBA749400994189 /* lisp_interpreter.cpp */,
+				458745D71CBA749400994189 /* lisp_interpreter.h */,
+				458745D31CBA6E6A00994189 /* lisp_object.cpp */,
+				458745D41CBA6E6A00994189 /* lisp_object.h */,
+				458745D01CB9DFE900994189 /* lisp_functions.cpp */,
+				458745D11CB9DFE900994189 /* lisp_functions.h */,
+				458745CD1CB9DE8F00994189 /* lisp_comparison_operators.cpp */,
+				458745CE1CB9DE8F00994189 /* lisp_comparison_operators.h */,
+				458745CA1CB9D9A600994189 /* lisp_aritmetic_operators.cpp */,
+				458745CB1CB9D9A600994189 /* lisp_aritmetic_operators.h */,
+				458745C91CB9D44000994189 /* lisp_errors.h */,
+				458745C61CB99DF200994189 /* lisp.cpp */,
+				458745C71CB99DF200994189 /* lisp.h */,
+				458745C21CB94C7B00994189 /* string_utils.h */,
+				45802B101CB9179C00290B38 /* lisp_utils.cpp */,
+				45802B0F1CB9163A00290B38 /* tokens.h */,
+				45802B0E1CB9157500290B38 /* lisp_utils.h */,
 				45802B061CB90BEF00290B38 /* interpreter */,
 				45802B051CB90BEF00290B38 /* Products */,
 			);
@@ -118,7 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458745D81CBA749400994189 /* lisp_interpreter.cpp in Sources */,
+				458745CF1CB9DE8F00994189 /* lisp_comparison_operators.cpp in Sources */,
+				458745CC1CB9D9A600994189 /* lisp_aritmetic_operators.cpp in Sources */,
+				458745C81CB99DF200994189 /* lisp.cpp in Sources */,
+				45802B111CB9179C00290B38 /* lisp_utils.cpp in Sources */,
 				45802B081CB90BEF00290B38 /* main.cpp in Sources */,
+				458745D51CBA6E6A00994189 /* lisp_object.cpp in Sources */,
+				458745D21CB9DFE900994189 /* lisp_functions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,14 +257,20 @@
 		45802B0C1CB90BEF00290B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = $SRCROOT/interpreter/igloo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		45802B0D1CB90BEF00290B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = $SRCROOT/interpreter/igloo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -239,6 +293,7 @@
 				45802B0D1CB90BEF00290B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

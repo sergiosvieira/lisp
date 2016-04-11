@@ -1,0 +1,17 @@
+.
+interpreter
+interpreter/igloo/cmake/cotire/src
+interpreter/igloo/igloo
+interpreter/igloo/igloo/core
+interpreter/igloo/igloo/core/outputters
+interpreter/igloo/igloo/core/testlisteners
+interpreter/igloo/igloo/external/choices
+interpreter/igloo/igloo/external/snowhouse/example
+interpreter/igloo/igloo/external/snowhouse/snowhouse
+interpreter/igloo/igloo/external/snowhouse/snowhouse/constraints
+interpreter/igloo/igloo/external/snowhouse/snowhouse/constraints/expressions
+interpreter/igloo/igloo/external/snowhouse/snowhouse/fluent
+interpreter/igloo/igloo/external/snowhouse/snowhouse/fluent/operators
+interpreter/igloo/igloo/external/snowhouse/snowhouse/fluent/operators/collections
+interpreter/igloo/tests
+interpreter/igloo/tests/fakes

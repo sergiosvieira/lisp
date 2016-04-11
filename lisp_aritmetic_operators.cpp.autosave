@@ -1,0 +1,68 @@
+#include "lisp_aritmetic_operators.h"
+
+#include <cstdlib>
+
+/** Public Methods **/
+LispObject LispAritmeticOperations::add(const VectorOfLispValues &lispObjects)
+{
+    VectorOfLispValues::const_iterator it = lispObjects.begin();
+    LispObject first = *it++;
+    long result = std::atol(first.value().c_str());
+    for (; it != lispObjects.end(); ++it)
+    {
+        LispObject current = *it;
+        result += std::atol(current.value().c_str());
+    }
+    return LispObject(TokenType::T_NUMBER, std::to_string(result));
+}
+
+LispObject LispAritmeticOperations::sub(const VectorOfLispValues &lispObjects)
+{
+    VectorOfLispValues::const_iterator it = lispObjects.begin();
+    LispObject first = *it++;
+    long result = std::atol(first.value().c_str());
+    for (; it != lispObjects.end(); ++it)
+    {
+        LispObject current = *it;
+        result -= std::atol(current.value().c_str());
+    }
+    return LispObject(TokenType::T_NUMBER, std::to_string(result));
+}
+
+LispObject LispAritmeticOperations::mul(const VectorOfLispValues &lispObjects)
+{
+    VectorOfLispValues::const_iterator it = lispObjects.begin();
+    LispObject first = *it++;
+    long result = std::atol(first.value().c_str());
+    for (; it != lispObjects.end(); ++it)
+    {
+        LispObject current = *it;
+        result *= std::atol(current.value().c_str());
+    }
+    return LispObject(TokenType::T_NUMBER, std::to_string(result));
+}
+
+LispObject LispAritmeticOperations::div(const VectorOfLispValues &lispObjects)
+{
+    VectorOfLispValues::const_iterator it = lispObjects.begin();
+    LispObject first = *it++;
+    long result = std::atol(first.value().c_str());
+    for (; it != lispObjects.end(); ++it)
+    {
+        LispObject current = *it;
+        result /= std::atol(current.value().c_str());
+    }
+    return LispObject(TokenType::T_NUMBER, std::to_string(result));
+}
+
+LispObject LispAritmeticOperations::length(const VectorOfLispValues &lispObjects)
+{
+    LispObject lvalue = lispObjects[0];
+    return LispObject(TokenType::T_NUMBER, std::to_string(lvalue.valuesSize()));
+}
+
+LispObject LispAritmeticOperations::nullPointer(const VectorOfLispValues &lispObjects)
+{
+    LispObject lvalue = lispObjects[0];
+    return lvalue.valuesEmpty() ? LispObject::kTrue : LispObject::kFalse;
+}
